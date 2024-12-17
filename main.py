@@ -164,7 +164,7 @@ if __name__ == "__main__":
     }
 
     # Set up the model and training utilities.
-    device = torch.device("cuda")
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = GatedTabTransformer(
         category_sizes=num_cat,
         num_numerical_features=train_cont.shape[1],
