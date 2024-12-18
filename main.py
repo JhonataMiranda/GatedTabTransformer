@@ -5,7 +5,6 @@ import pandas as pd
 from GatedTabTransformer import GatedTabTransformer
 import uuid
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn import metrics
 import copy
 
